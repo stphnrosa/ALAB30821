@@ -28,25 +28,25 @@
 // The companion’s type is “Flea.”
 // The companion has its own belongings, which includes a small hat and sunglasses.
 
-const adventurer = {
-    name: "Robin",
-    health: 10,
-    inventory: ["sword", "potion", "artifact"],
-    companion:{ // When I used "... it didn't work. I just rewrote everything from the previous example
-                name:"Leo",
-                type:"Cat",
-                     companion: {
-                        name:"Frank",
-                        type:"Flea",
-                        inventory:["small hat","sunglasses"],
-                     }
-                    }   ,                
-    roll (mod = 0) {
-    const result = Math.floor(Math.random() * 20) + 1 + mod;
-    console.log(`${this.name} rolled a ${result}.`)
-    }
-    }
-    adventurer.roll() // <=== This is so cool. I got robin rolled a 3, robin rolled a 5 and robin rolled a 7. Super convenient.
+// const adventurer = {
+//     name: "Robin",
+//     health: 10,
+//     inventory: ["sword", "potion", "artifact"],
+//     companion:{ // When I used "... it didn't work. I just rewrote everything from the previous example
+//                 name:"Leo",
+//                 type:"Cat",
+//                      companion: {
+//                         name:"Frank",
+//                         type:"Flea",
+//                         inventory:["small hat","sunglasses"],
+//                      }
+//                     }   ,                
+//     roll (mod = 0) {
+//     const result = Math.floor(Math.random() * 20) + 1 + mod;
+//     console.log(`${this.name} rolled a ${result}.`)
+//     }
+//     }
+//     adventurer.roll() // <=== This is so cool. I got robin rolled a 3, robin rolled a 5 and robin rolled a 7. Super convenient.
 
 
     // Part 2: Class Fantasy
@@ -75,4 +75,9 @@ const adventurer = {
         }
       }
 
+      roll (mod = 0); {
+        const result = Math.floor(Math.random() * 20) + 1 + mod;
+        console.log(`${this.name} rolled a ${result}.`)
+        }
       
+        Character.roll()
