@@ -53,9 +53,26 @@ const adventurer = {
     // Start with a Character class, which will define generic character entities. Robin and their companions all have a name, so the Character class should definitely include name as one of its properties. At this stage, we will also make the decision that every character should have health (which we will standardize to a maximum of 100, and an inventory (even if the inventory is empty).
 
     class Character {
-        constructor (name) {
-          this.name = name;
+        constructor (Robin) {
+          this.name = Robin;
+          this.health = 100;
+          this.inventory = ["sword", "potion", "artifact"];
+        }
+      }
+
+      class Character {
+        constructor (Leo) {
+          this.name = Leo;
           this.health = 100;
           this.inventory = [];
         }
       }
+      class Character {
+        constructor (Frank) {
+          this.name = Frank;
+          this.health = 100;
+          this.inventory = ["small hat","sunglasses"];
+        }
+      }
+
+      
